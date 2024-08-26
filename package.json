@@ -5,7 +5,7 @@
   "dependencies": {
     "@coinbase/onchainkit": "^0.31.0",
     "@ethersproject/units": "^5.7.0",
-    "alchemy-sdk": "^2.8.0",
+    "alchemy-sdk": "^3.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
