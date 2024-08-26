@@ -1,0 +1,164 @@
+/* Global styles and Dark Theme */
+:root {
+  --bg-color: #121212;
+  --bg-color-light: #1e1e1e;
+  --bg-color-lighter: #2c2c2c;
+  --text-color: #e0e0e0;
+  --text-color-muted: #a0a0a0;
+  --primary-color: #4a90e2; /* Bright cobalt blue */
+  --accent-color: #3d5afe;
+  --border-color: #333333;
+  --error-color: #ff5252;
+  --success-color: #4caf50;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-image: url('../../public/wallhaven-nz5w3v.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(18, 18, 18, 0.9);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+input[type="text"], input[type="search"] {
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 15px;
+}
+
+/* Search Container Styles */
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+/* Section Styles */
+.section {
+  background-color: var(--bg-color-light);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* List Styles */
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  background-color: var(--bg-color-lighter);
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+  background-color: var(--bg-color-light);
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-color-muted);
+}
+
+/* Error Message Styles */
+.error-message {
+  color: var(--error-color);
+  margin-top: 10px;
+  font-weight: bold;
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
